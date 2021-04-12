@@ -32,19 +32,33 @@ def largest_factor(x):
 print(largest_factor(49))
 
 #question 5
+def if_function(condition, true_result, false_result):
+    if condition:
+        return true_result
+    else:
+        return false_result
+        
+        
+def with_if_function():
+    return if_function(3==0, true_func(), false_func())
 
+def cond():
+    return False
 
+def true_func():
+    print("Welcome to")
 
-
-
-
+def false_func():
+    print("61A")
+    
+with_if_function()
 
 #question 6
 def hailstone(x):
     print(x)
     while(x!=1):
         if(x%2==0):
-            x=x/2
+            x=int(x/2)  # using `int` to explicitly define integer
             print(x)
         elif(x%2!=0):
             x=3*x+1
